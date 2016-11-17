@@ -4,14 +4,14 @@
 <test name="Ffox">
     <parameter name="myBrowser" value="chrome" />
     <classes>
-        <class name="com.amido.TestParallel" />
+        <class name="com.fc572.TestParallel" />
     </classes>
 </test>
 
 <test name="chrome">
     <parameter name="myBrowser" value="firefox" />
     <classes>
-        <class name="com.amido.TestParallel" />
+        <class name="com.fc572.TestParallel" />
     </classes>
 </test>
 </suite>

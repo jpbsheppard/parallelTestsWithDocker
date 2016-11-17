@@ -1,4 +1,4 @@
-package com.amido;
+package com.fc572;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
