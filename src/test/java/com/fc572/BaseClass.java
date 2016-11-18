@@ -22,13 +22,13 @@ public class BaseClass {
             DesiredCapabilities capability = DesiredCapabilities.chrome();
             capability.setBrowserName("chrome");
             capability.setPlatform(Platform.LINUX);
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+            driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), capability);
         }
         else if(myBrowser.equalsIgnoreCase("firefox")){
             DesiredCapabilities capability = DesiredCapabilities.firefox();
             capability.setBrowserName("firefox");
             capability.setPlatform(Platform.LINUX);
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+            driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), capability);
         }
     }
 
