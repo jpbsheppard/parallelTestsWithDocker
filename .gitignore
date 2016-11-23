@@ -1,1 +1,14 @@
 .idea
+/target
+
+*.class
+.project
+.classpath
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear

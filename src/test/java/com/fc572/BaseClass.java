@@ -17,18 +17,18 @@ public class BaseClass {
     @BeforeClass(alwaysRun = true)
     public void beforeTest(String myBrowser) throws MalformedURLException{
         long id = Thread.currentThread().getId();
-        System.out.println("Before test " + ". Thread id is: " + id);
+        System.out.println("Before test " + "Thread id is: " + id);
         if(myBrowser.equalsIgnoreCase("chrome")){
             DesiredCapabilities capability = DesiredCapabilities.chrome();
             capability.setBrowserName("chrome");
             capability.setPlatform(Platform.LINUX);
-            driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), capability);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
         }
         else if(myBrowser.equalsIgnoreCase("firefox")){
             DesiredCapabilities capability = DesiredCapabilities.firefox();
             capability.setBrowserName("firefox");
             capability.setPlatform(Platform.LINUX);
-            driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), capability);
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
         }
     }
 
